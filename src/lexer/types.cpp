@@ -3,6 +3,13 @@
 #include <variant>
 
 namespace Core {
+	class SymbolType {
+	private:
+		std::string symn;
+	public:
+		SymbolType(std::string sym) : symn(sym) {}
+	};
+
 	// --- Integer Types ---
 	struct Int16 { int16_t value; };
 	struct Int32 { int32_t value; };
