@@ -3,6 +3,8 @@
 #include <vector>
 #include <string_view>
 #include <string>
+#include <fstream>
+#include <filesystem>
 
 void show_help();
 
@@ -21,6 +23,8 @@ int main(int argc, char* argv[]) {
 			return 0;
 		} else if (arg == "-v" || arg == "--version") {
 			std::cout << "[ \x1B[33mVERSION\x1B[0m ] 1.1.1-alpha" << std::endl;
+			return 0;
+		} else if (arg == "-f" || arg == "--file") {
 			return 0;
 		}
 	}
